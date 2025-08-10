@@ -7,28 +7,31 @@ import Link from 'next/link';
 const projects = [
 	{
 		id: 1,
-		title: 'E-Commerce Platform',
-		description: 'A modern e-commerce platform built with Next.js and Stripe',
-		image: '/code.jpg',
+		title: 'Fingers Tap',
+		description: 'A real-time multi-finger tap detection system',
+		image: '/laptop.jpg',
+		link:"http://github.com/grand-27-master/Fingers-Tap"
 	},
 	{
 		id: 2,
-		title: 'AI Chat Application',
-		description: 'Real-time chat application powered by OpenAI',
+		title: 'interviewGPT',
+		description: 'An AI-powered interview preparation tool that helps users practice coding interviews with real-time feedback',
 		image: '/laptop.jpg',
+		link:"https://github.com/grand-27-master/InterviewGPT"
 	},
 	{
 		id: 3,
-		title: 'Task Management',
-		description: 'Collaborative task management tool with real-time updates',
-		image: '/code.jpg',
+		title: 'Healthcare API',
+		description: 'A RESTful API for healthcare applications which was a part of a company assignment',
+		image: '/laptop.jpg',
+		link:"https://github.com/grand-27-master/Healthcare-API"
 	},
 	{
 		id: 4,
-		title: 'Portfolio Generator',
-		description: 'Dynamic portfolio generator for developers',
+		title: 'Paddle Pong',
+		description: 'A fun and interactive paddle pong game which was a part of a company assignment',
 		image: '/laptop.jpg',
-		link:"https://drive.google.com/file/d/1_nTPVAoUFu_k0ED-TDwbxHYijEPg4Vcu/view?usp=sharing"
+		link:"https://github.com/grand-27-master/Paddle-Pong"
 	},
 ];
 
@@ -64,7 +67,7 @@ export default function ProjectsSection() {
 							<div className="flex gap-4">
 								{project.link && (
 									<Link href={project.link} target='_blank' className="text-sm px-4 py-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors">
-										View
+										Learn More
 									</Link>
 								)}
 							</div>
