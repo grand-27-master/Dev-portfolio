@@ -28,6 +28,7 @@ const projects = [
 		title: 'Portfolio Generator',
 		description: 'Dynamic portfolio generator for developers',
 		image: '/laptop.jpg',
+		link:"https://drive.google.com/file/d/1_nTPVAoUFu_k0ED-TDwbxHYijEPg4Vcu/view?usp=sharing"
 	},
 ];
 
@@ -61,9 +62,11 @@ export default function ProjectsSection() {
 							<h3 className="text-xl font-bold mb-2">{project.title}</h3>
 							<p className="text-gray-300 mb-4">{project.description}</p>
 							<div className="flex gap-4">
-								<Link href="#" className="text-sm px-4 py-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors">
-									View
-								</Link>
+								{project.link && (
+									<Link href={project.link} target='_blank' className="text-sm px-4 py-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors">
+										View
+									</Link>
+								)}
 							</div>
 						</div>
 					</motion.div>
